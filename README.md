@@ -6,4 +6,4 @@ Credit goes to the amazing people at Google and Kaggle for creating this course 
 
 ## Content
 
-1. [Unit 1: Prompt Engineering (Notes)](Unit-1-Prompt-Engineering/README.md)
+1. [Unit 1: Prompt Engineering (Notes)](Unit-1-Prompt-Engineering/Notes-and-Summary.md)

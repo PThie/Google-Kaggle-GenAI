@@ -1,5 +1,13 @@
 # Notes and Summary on Prompt Engineering (Unit 1)
 
+## Table of Contents
+
+1. [What is Prompt Engineering?](#what-is-prompt-engineering)
+2. [What is a Prompt?](#what-is-a-prompt)
+3. [LLM output configuration](#llm-output-configuration)
+4. [Prompting Techniques](#prompting-techniques)
+5. [Best Practices for Prompting](#best-practices-for-prompting)
+
 ## What is Prompt Engineering?
 
 - Process of designing high-quality prompts to help the LLM to generate the desired output
@@ -58,11 +66,62 @@
 ### 4. System prompting
 
 - Setting the big picture for the response
+- Defines the model's capabilities
+- It is like providing another task to the system. 
 
-#### 5. Contextual prompting
+### 5. Contextual prompting
 
 - Providing specific details and background to the model
+- Highly task-specific
 
-#### 6. Role prompting
+### 6. Role prompting
 
--
+- Model should take specific character or role
+- Frames the output style
+
+### 7. Step-back prompting
+
+- Prevent the model from jumping straight into the answer
+- Provide a more general question first
+- Provide the specific question later
+
+### 8. Chain-of-thought prompting (CoT)
+
+- Asking the model to think step-by-step
+- Helps the model to break down the problem into smaller parts
+
+### 9. Self-consistency prompting
+
+- Asking the model to generate multiple outputs for the same prompt
+- Select the most common output
+- Helps to improve accuracy and coherence of the output
+
+### 10. Tree-of-thought prompting (ToT)
+
+- Generalizes CoT prompting
+- Exploration of multiple different reasoning paths
+
+## Best Practices for Prompting
+
+- Provide examples
+    - Allows the model to learn and tailor responses
+- Keep it simple and clear
+    - Prompt should be easy to understand by you and the model
+- Be specific
+    - Not generic
+    - Provide details and context
+- Define instructions and set constraints
+    - Instructions: define desired format, style or content
+    - Constraints: define limitations or restrictions (things the model should avoid)
+- Control maximum token length
+    - Set limit (max token limit)
+    - Define length in prompt
+- Use variables as placeholders
+    ```
+    VARIABLES
+    {country} = "Germany"
+    PROMPT
+    "Tell me about the capital of {country}."
+    ```
+- Experiment with input formats, writing styles, and output formats
+- Document prompt attempts
