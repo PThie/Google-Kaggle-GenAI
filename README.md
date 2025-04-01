@@ -8,3 +8,4 @@ Credit goes to the amazing people at Google and Kaggle for creating this course 
 
 0. [Unit 0: Foundational LLM (Notes)](Unit-0-Foundational-LLM/Notes-and-Summary.md)
 1. [Unit 1: Prompt Engineering (Notes)](Unit-1-Prompt-Engineering/Notes-and-Summary.md)
+2. [Unit 1: Evaluating LLMs (Notes)](Unit-1-Prompt-Engineering/Notes-Evaluation.md)
