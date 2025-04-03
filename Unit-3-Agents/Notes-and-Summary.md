@@ -28,7 +28,7 @@
 - Agent:
   - Extends the standalone capabilities of a Gen AI model
   - Gives model access to real-time information or allows real-world action
-  - Overs reasoning, logic and access to external information to the model
+  - Offers reasoning, logic and access to external information to the model
 
 ## Agent architecture and components
 
