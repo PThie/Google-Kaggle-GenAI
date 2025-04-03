@@ -10,4 +10,4 @@ Credit goes to the amazing people at Google and Kaggle for creating this course 
 1. [Unit 1: Prompt Engineering (Notes)](Unit-1-Prompt-Engineering/Notes-and-Summary.md)
 2. [Unit 1: Evaluating LLMs (Notes)](Unit-1-Prompt-Engineering/Notes-Evaluation.md)
 3. [Unit 2: Embeddings (Notes)](Unit-2-Embeddings/Notes-and-Summary.md)
-4. [Unit 3: Agents](Unit-3-Agents/Notes-and-Summary.md)
+4. [Unit 3: Agents (Notes)](Unit-3-Agents/Notes-and-Summary.md)
