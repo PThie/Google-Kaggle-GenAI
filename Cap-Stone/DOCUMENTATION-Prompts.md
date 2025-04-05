@@ -82,27 +82,7 @@
     </tr>
     <tr>
         <td>Prompt</td>
-        <td>
-            <pre>
-            # inputs
-            event = "Assassination of John F Kennedy"
-            scenario = "What if JFK was not murdered?"
-            output_type = "news article"
-            role = "journalist"
-            additional_instructions = "Be dramatic. You are working for The Sun."
-
-            prompt = f"""
-                Based on the following Wikipedia summary about the {event}:
-                {event_summary}
-
-                f"Take on the role {role} in 2025. Write a {output_type}."
-                f"Imagining that the following event in history had a different outcome: {event}."
-                f"Consider the following scenario: {scenario} as counterfactual scenario."
-                f"{additional_instructions}"
-                f"Write it not conditional. Write in active style such that you could think it really happened like this"
-            """
-            </pre>
-        </td>
+        <td>See below</td>
     </tr>
     <tr>
         <td>Output</td>
@@ -110,7 +90,29 @@
     </tr>
 </table>
 
-### Output Excution-1
+### Prompt Execution-1
+
+```{python}
+# inputs
+event = "Assassination of John F Kennedy"
+scenario = "What if JFK was not murdered?"
+output_type = "news article"
+role = "journalist"
+additional_instructions = "Be dramatic. You are working for The Sun."
+
+prompt = f"""
+    Based on the following Wikipedia summary about the {event}:
+    {event_summary}
+
+    f"Take on the role {role} in 2025. Write a {output_type}."
+    f"Imagining that the following event in history had a different outcome: {event}."
+    f"Consider the following scenario: {scenario} as counterfactual scenario."
+    f"{additional_instructions}"
+    f"Write it not conditional. Write in active style such that you could think it really happened like this"
+"""
+```
+
+### Output Execution-1
  THE SUN
 -------
 
