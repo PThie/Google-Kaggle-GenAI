@@ -6,28 +6,59 @@
 
 ## Template
 
-| |  |
-|---|---|
-|Name | .. |
-|Goal | .. |
-|Model | .. |
-|Temperature | .. |
-|Top-K | .. |
-|Top-P | .. |
-|Token Limit | .. |
-|Prompt | .. |
-|Output | see below |
+<table>
+    <tr>
+        <td>Name</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Goal</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Model</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Temperature</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Top-K</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Top-P</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Token Limit</td>
+        <td>...</td>
+    </tr>
+    <tr>
+        <td>Prompt</td>
+        <td>
+            <pre>
+
+            </pre>
+        </td>
+    </tr>
+    <tr>
+        <td>Output</td>
+        <td>See below</td>
+    </tr>
+</table>
 
 ## Execution-1
 
 <table>
     <tr>
         <td>Name</td>
-        <td>Dramatic News</td>
+        <td>Dramatic News JFK</td>
     </tr>
     <tr>
         <td>Goal</td>
-        <td>Producing dramatic news article</td>
+        <td>Producing dramatic news article on assassination of JFK</td>
     </tr>
     <tr>
         <td>Model</td>
@@ -53,16 +84,23 @@
         <td>Prompt</td>
         <td>
             <pre>
-prompt = f"""
-    Based on the following Wikipedia summary about the {event}:
-    {event_summary}
+            # inputs
+            event = "Assassination of John F Kennedy"
+            scenario = "What if JFK was not murdered?"
+            output_type = "news article"
+            role = "journalist"
+            additional_instructions = "Be dramatic. You are working for The Sun."
 
-    f"Take on the role {role} in 2025. Write a {output_type}."
-    f"Imagining that the following event in history had a different outcome: {event}."
-    f"Consider the following scenario: {scenario} as counterfactual scenario."
-    f"{additional_instructions}"
-    f"Write it not conditional. Write in active style such that you could think it really happened like this"
-"""
+            prompt = f"""
+                Based on the following Wikipedia summary about the {event}:
+                {event_summary}
+
+                f"Take on the role {role} in 2025. Write a {output_type}."
+                f"Imagining that the following event in history had a different outcome: {event}."
+                f"Consider the following scenario: {scenario} as counterfactual scenario."
+                f"{additional_instructions}"
+                f"Write it not conditional. Write in active style such that you could think it really happened like this"
+            """
             </pre>
         </td>
     </tr>
